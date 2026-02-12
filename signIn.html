@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/signIn.css">
+  <title>تسجيل حساب</title>
+</head>
+
+<body>
+  <div class="message-Error">
+    <p>من فضللك أدخل البيانات</p>
+  </div>
+
+  <main>
+    <h3>حقــــــل تسجيــل حســاب</h3>
+    <form class="form-signIn">
+      <div class="form-input">
+        <div class="avatar-input">
+          <label for="avatar">رتبة المستخدم</label>
+          <input type="text" id="avatar" class="avatar" name="avatar" placeholder="ادخل رتبة المستخدم" />
+        </div>
+        <div class="name-input">
+          <label for="name">إسم المستخدم</label>
+          <input type="text" id="name" class="name" name="name" placeholder="ادخل إسم المستخدم" />
+
+          <div class="correct-name">
+            <p class="massage">الإسم صحيح</p>
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+
+          <div class="error-name">
+            <p class="massage">الإسم غير صحيح</p>
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="email-input">
+        <label for="email">الإيميل</label>
+        <input type="text" id="email" class="email" name="email" placeholder="ادخل الإيميل" />
+
+        <div class="correct-email">
+          <p class="massage">الإيميل صحيح</p>
+          <ion-icon name="checkmark-outline"></ion-icon>
+        </div>
+
+        <div class="error-email">
+          <p class="massage">الإيميل غير صحيح</p>
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="password-input">
+        <label for="password">كلمة المرور</label>
+        <input type="password" id="password" class="password" name="password" placeholder="ادخل كلمة المرور" />
+        <div class="correct-password">
+          <p class="massage">كلمة السر صحيحة</p>
+          <ion-icon name="checkmark-outline"></ion-icon>
+        </div>
+
+        <div class="error-password">
+          <p class="massage">كلمة السر غير صحيحة</p>
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+
+        <div class="toggle-password">
+          <ion-icon class="show" name="eye-outline"></ion-icon>
+          <ion-icon class="hide" name="eye-off-outline"></ion-icon>
+        </div>
+      </div>
+      </div>
+
+      <input type="submit" value="تسجيل الدخول" class="submit" />
+    </form>
+  </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="js/signIn.js"></script>
+</body>
+
+</html>

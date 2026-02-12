@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="message-Error">
+      <p>من فضللك أدخل البيانات</p>
+    </div>
+    <main>
+      <h3>حقــل إدخال أصنـــاف وحدة الأسلحة والذخيرة رقم (36)</h3>
+      <form class="dashboard-form">
+        <div class="form-inputs">
+          <div class="name-product">
+            <label for="name">إسم الصنف</label>
+            <input
+              type="text"
+              id="name"
+              class="name"
+              placeholder="ادخل إسم الصنف"
+            />
+          </div>
+
+          <div class="nationality-product">
+            <label for="nationality">جنسية الصنف</label>
+            <input
+              type="text"
+              id="nationality"
+              class="nationality"
+              placeholder="إدخل جنسيه الصنف"
+            />
+          </div>
+        </div>
+
+        <div class="form-inputs">
+          <div class="type-product">
+            <label for="type">نوع الصنف</label>
+            <input
+              type="text"
+              id="type"
+              class="type"
+              placeholder="إدخل نوع الصنف"
+            />
+          </div>
+
+          <div class="hyper-product">
+            <label for="hyper">رقم المخزن</label>
+            <input
+              type="number"
+              id="hyper"
+              class="hyper"
+              placeholder="إدخل رقم المخزن"
+            />
+          </div>
+
+          <div class="loot-product">
+            <label for="loot">لوت الصنف</label>
+            <input
+              type="text"
+              id="loot"
+              class="loot"
+              placeholder="إدخل لوت الصنف"
+            />
+          </div>
+        </div>
+
+        <div class="form-total">
+          <div class="form-inputs">
+            <div class="box-product">
+              <label for="box">عدد صناديق الصنف</label>
+              <input
+                type="number"
+                id="box"
+                class="box"
+                placeholder="إدخل عدد صناديق الصنف"
+              />
+            </div>
+  
+            <div class="number-product">
+              <label for="number">عبوة الصنف</label>
+              <input
+                type="number"
+                id="number"
+                class="number"
+                placeholder="إدخل عبوة الصنف"
+              />
+            </div>
+          </div>
+          <div class="form-inputs">
+            <div class="box-product">
+              <label for="box">عدد صناديق الصنف</label>
+              <input
+                type="number"
+                id="box"
+                class="box-two"
+                placeholder="إدخل عدد صناديق الصنف"
+              />
+            </div>
+  
+            <div class="number-product">
+              <label for="number">عبوة الصنف</label>
+              <input
+                type="number"
+                id="number"
+                class="number-two"
+                placeholder="إدخل عبوة الصنف"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-select">
+          <label>اختر المجموعة</label>
+
+          <div class="select-box" onselectstart="return false">
+            <span class="selected">كل المجموعات والأقسام</span>
+            <ion-icon name="chevron-up-outline"></ion-icon>
+          </div>
+
+          <ul class="select-list">
+            <li data-value="All">كل المجموعات والأقسام</li>
+            <li data-value="المجموعه الأولي">المجموعه الأولي</li>
+            <li data-value="المجموعه الثانية">المجموعه الثانية</li>
+            <li data-value="المجموعه الثالثة">المجموعه الثالثة</li>
+            <li data-value="قسم الاسماعليه">قسم الاسماعليه</li>
+            <li data-value="قسم سرابيم">قسم سرابيم</li>
+          </ul>
+        </div>
+
+
+        <button type="button" class="submit">إضافة الصنف</button>
+      </form>
+    </main>
+
+    <script type="module" src="js/dashboard.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

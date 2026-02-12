@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/data.css" />
+  <title>index</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./img/300px-شعار_إدارة_الأسلحة_والذخيرة_بالقوات_المسلحة_المصرية.webp" alt="Logo" />
+        <h2>إدارة الأسلحــة والذخيرة</h2>
+      </div>
+
+      <nav class="navbar">
+        <div class="account">
+          <p class="username"></p>
+        </div>
+        <a href="./dashboard.html">
+          <button type="button" class="add-product">إضافة صنف</button>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <h3>بيـــــان أصنـــاف وحدة الأسلحة والذخيرة رقم (36)</h3>
+  <section>
+    <table>
+      <thead>
+        <th>م</th>
+        <th>إسم الصنف</th>
+        <th>النوع</th>
+        <th>الجنسية</th>
+        <th class="increment-quantity">
+          <p class="quantity">الكمية</p>
+          <div class="total-product">
+            <p>ص</p>
+            <p>ع</p>
+            <p>الإجمالي</p>
+          </div>
+        </th>
+        <th>الإجمالي العام</th>
+        <th>لوت</th>
+        <th>رقم المخزن</th>
+        <th>المجموعة</th>
+        <th>التعديل و الحذف</th>
+      </thead>
+      <tbody>
+        <tr></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="buttons">
+    <a href="index.html">
+      <!-- From Uiverse.io by adamgiebl -->
+      <button class="cssbuttons-io-button">
+        الصفحة الرئيسية
+        <div class="icon">
+          <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+              fill="currentColor"></path>
+          </svg>
+        </div>
+      </button>
+    </a>
+    <!-- From Uiverse.io by Jedi-hongbin -->
+    <button class="veg-button">
+      <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+        <path
+          d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z">
+        </path>
+      </svg>
+      <span>الخروج من الحساب</span>
+    </button>
+
+  </div>
+
+  <div class="show-section-edit">
+    <button class="btn-close">X</button>
+    <form class="form-edit">
+      <div class="form-inputs">
+        <div class="name-product">
+          <label for="name">اسم الصنف</label>
+          <input type="text" id="name" class="name" placeholder="ادخل اسم الصنف" />
+        </div>
+
+        <div class="nationality-product">
+          <label for="nationality">جنسيه الصنف</label>
+          <input type="text" id="nationality" class="nationality" placeholder="ادخل جنسيه الصنف" />
+        </div>
+      </div>
+
+      <div class="form-inputs">
+        <div class="type-product">
+          <label for="type">نوع الصنف</label>
+          <input type="text" id="type" class="type" placeholder="ادخل نوع الصنف" />
+        </div>
+
+        <div class="hyper-product">
+          <label for="hyper">رقم المخزن</label>
+          <input type="number" id="hyper" class="hyper" placeholder="ادخل رقم المخزن" />
+        </div>
+
+        <div class="loot-product">
+          <label for="loot">لوت الصنف</label>
+          <input type="text" id="loot" class="loot" placeholder="ادخل لوت الصنف" />
+        </div>
+      </div>
+
+      <div class="form-total">
+        <div class="form-inputs">
+          <div class="box-product">
+            <label for="box">عدد صناديق الصنف</label>
+            <input type="number" id="box" class="box" placeholder="إدخل عدد صناديق الصنف" />
+          </div>
+
+          <div class="number-product">
+            <label for="number">عبوة الصنف</label>
+            <input type="number" id="number" class="number" placeholder="إدخل عبوة الصنف" />
+          </div>
+        </div>
+        <div class="form-inputs">
+          <div class="box-product">
+            <label for="box">عدد صناديق الصنف</label>
+            <input type="number" id="box" class="box-two" placeholder="إدخل عدد صناديق الصنف" />
+          </div>
+
+          <div class="number-product">
+            <label for="number">عبوة الصنف</label>
+            <input type="number" id="number" class="number-two" placeholder="إدخل عبوة الصنف" />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-select">
+        <label>اختر المجموعة</label>
+
+        <div class="select-box" onselectstart="return false">
+          <span class="selected">كل المجموعات والأقسام</span>
+          <ion-icon name="chevron-up-outline"></ion-icon>
+        </div>
+
+        <ul class="select-list">
+          <li data-value="All">كل المجموعات والأقسام</li>
+          <li data-value="المجموعه الأولي">المجموعه الأولي</li>
+          <li data-value="المجموعه الثانية">المجموعه الثانية</li>
+          <li data-value="المجموعه الثالثة">المجموعه الثالثة</li>
+          <li data-value="قسم الاسماعليه">قسم الاسماعليه</li>
+          <li data-value="قسم سرابيم">قسم سرابيم</li>
+        </ul>
+      </div>
+
+      <button type="button" class="btn-edit">تعديل الصنف</button>
+    </form>
+  </div>
+
+  <!-- From Uiverse.io by vinodjangid07 -->
+  <button class="back-to-top">
+    <svg class="svgIcon" viewBox="0 0 384 512">
+      <path
+        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+      </path>
+    </svg>
+  </button>
+
+
+  <script type="module" src="js/handle-products.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

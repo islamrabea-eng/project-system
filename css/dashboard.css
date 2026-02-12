@@ -1,0 +1,293 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  direction: rtl;
+}
+
+body {
+  display: flex;
+  font-family: "Tajawal", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eee;
+  margin-inline: 10px;
+}
+
+main {
+  background-color: #f7f7f7e5;
+  max-width: 843px;
+  width: 100%;
+  padding-block: 20px;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+main h3 {
+  font-size: 17px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+main .dashboard-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  max-width: 818px;
+  width: 100%;
+}
+
+main .dashboard-form .form-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.name-product,
+.nationality-product,
+.type-product,
+.quantity-product,
+.box-product,
+.loot-product,
+.number-product,
+.hyper-product {
+  width: 100%;
+}
+
+.nationality-product label,
+.name-product label,
+.type-product label,
+.quantity-product label,
+.box-product label,
+.loot-product label,
+.number-product label,
+.hyper-product label {
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.nationality-product input,
+.name-product input,
+.type-product input,
+.quantity-product input,
+.box-product input,
+.loot-product input,
+.number-product input,
+.hyper-product input {
+  border: 1px solid #9f9f9f;
+  border-radius: 7px;
+  padding-block: 10px;
+  padding-inline: 10px;
+  margin-top: 7px;
+  outline: none;
+  width: 100%;
+  color: #393939;
+}
+input:focus {
+  border: 1px solid #0421c6;
+}
+
+.submit {
+  margin-top: 17px;
+  background: #0421c6;
+  color: white;
+  border: hidden;
+  border-radius: 30px;
+  width: 174px;
+  margin-inline: auto;
+  height: 39px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.submit:active {
+  transform: scale(0.96);
+}
+
+select {
+  background-color: white;
+  border: 1px solid #9f9f9f;
+  border-radius: 7px;
+  padding-block: 10px;
+  padding-inline: 10px;
+  margin-top: 7px;
+  outline: none;
+  width: 100%;
+  color: #393939;
+}
+
+.message-Error {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dd0404;
+  border-radius: 6px;
+  max-width: 218px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  font-family: arial;
+  transform: translateX(100%);
+  opacity: 0;
+  transition-duration: 0.7s;
+}
+
+.message-Error.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.form-total {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-select {
+  position: relative;
+
+  ion-icon {
+    color: #0421c6;
+    transition-duration: 0.5s;
+  }
+  ion-icon.rotate {
+    transform: rotate(180deg);
+  }
+
+  .select-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #9f9f9f;
+    border-radius: 7px;
+    padding-inline: 10px;
+    padding-block: 10px;
+    background-color: white;
+    outline: none;
+  }
+
+  .select-list {
+  position: absolute;
+  top: 72px;
+  background-color: white;
+  list-style: none;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 6px;
+  display: grid;
+  gap: 6px;
+  max-height: 0;
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition:
+    max-height 0.25s ease,
+    transform 0.25s ease;
+
+  &.active {
+    max-height: 300px;
+    transform: scaleY(1);
+    padding: 10px;
+  }
+}
+
+  .select-list li {
+    padding: 11px 9px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0f2bcbd1;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    margin-inline: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .form-total {
+    flex-direction: row;
+  }
+
+  main h3 {
+    font-size: 21px;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    max-width: 920px;
+
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    padding-block: 35px;
+    padding-inline: 30px;
+    max-width: 1139px;
+
+    h3 {
+      font-size: 29px;
+    }
+  }
+  main .dashboard-form {
+    max-width: 1103px;
+  }
+  .nationality-product label,
+  .name-product label,
+  .type-product label,
+  .quantity-product label,
+  .box-product label,
+  .loot-product label,
+  .number-product label,
+  .hyper-product label {
+    font-size: 17px;
+  }
+
+  .nationality-product input,
+  .name-product input,
+  .type-product input,
+  .quantity-product input,
+  .box-product input,
+  .loot-product input,
+  .number-product input,
+  .hyper-product input {
+    padding-block: 10px;
+    font-size: 17px;
+  }
+
+  .submit {
+    font-size: 17px;
+    width: 199px;
+    height: 46px;
+  }
+
+  .form-select {
+    label {
+      font-size: 17px;
+    }
+  }
+}
