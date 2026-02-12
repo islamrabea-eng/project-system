@@ -8,8 +8,8 @@ function actionGroup() {
         element.addEventListener("click", () => {
             let dataId = element.getAttribute("data-id");
             let userId = +element.getAttribute("userId");
-            window.location.href = `../details-group.html?group=${encodeURIComponent(dataId)}&userId=${userId}` 
-        })        
+            window.location.href = `./details-group.html?group=${encodeURIComponent(dataId)}&userId=${userId}` 
+        })
     });
 }
 
